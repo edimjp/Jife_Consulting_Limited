@@ -1,0 +1,44 @@
+form {
+  width: 100%;
+}
+
+div.sbs-input {
+  display: flex;
+  gap: 1.5rem;
+}
+
+div.sbs-input input {
+  /* max-width: 17rem;
+  width: 10rem; */
+}
+
+form div.form-group {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+div.form-group input,
+div.form-group textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: solid 2px rgb(146, 149, 150);
+  padding: 0.875rem 0;
+  font-size: 1rem;
+  color: var(--black);
+  transition: all ease 0.5s;
+}
+
+div.form-group input:hover,
+div.form-group textarea:hover {
+  background: rgba(214, 214, 214, 0.205);
+}
+
+div.form-group label {
+  color: rgb(146, 149, 150);
+}
+
+div.form-group textarea {
+  resize: none;
+}

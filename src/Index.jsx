@@ -4,6 +4,7 @@ import indexFimage2 from "./assets/JCL_Image2.jpg";
 import indexFimage3 from "./assets/JCL_Image1.jpg";
 import whyJifeImage from "./assets/WJCL_Image2.jpg";
 import Footer from "./Footer/Footer.jsx";
+import ContactUs from "./ContactUs/ContactUs.jsx";
 
 function Index() {
   return (
@@ -160,6 +161,8 @@ function Index() {
             </p>
           </div>
         </section>
+
+        <ContactUs className="CU_Section" />
       </main>
       <Footer />
     </>

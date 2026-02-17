@@ -1,0 +1,54 @@
+section.contact_us {
+  height: 678px;
+  background-color: rgb(255, 255, 255);
+}
+
+section.contact_us h2 {
+  font-size: 1.5rem;
+}
+
+div.emailLogo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+div.cu_header {
+  margin-bottom: 3rem;
+}
+
+div.cu_header p {
+  font-size: 1rem;
+  color: rgb(146, 149, 150);
+  font-weight: 600;
+}
+
+section.contact_us img.svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+div.divText span,
+div.emailLogo p {
+  font-weight: 700;
+}
+
+div.location {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+div.location span {
+  line-height: 1rem;
+  max-width: 10rem;
+  text-align: justify;
+}
+
+div.phone {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
