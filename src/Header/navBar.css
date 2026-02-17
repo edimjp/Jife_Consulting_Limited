@@ -1,0 +1,109 @@
+nav {
+  background-color: var(--white);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.15),
+    0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4.5rem;
+  align-items: center;
+  animation: navDrop 1s ease forwards;
+}
+
+@keyframes navDrop {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+nav div {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  height: 100%;
+}
+
+nav a.JCLL_Link {
+  margin-left: 2rem;
+}
+
+nav img.JCL_Logo {
+  height: 3rem;
+  width: auto;
+  transition: all 0.5s ease;
+}
+
+nav img.JCL_Logo:hover {
+  transform: scale(0.97);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  margin-right: clamp(1rem, 6vw, 8rem);
+  height: 100%;
+  /* gap: clamp(1rem, 3.5vw, 8rem); */
+}
+
+nav ul li {
+  display: flex;
+  height: 100%;
+  opacity: 0;
+  animation: fadeDown 0.4s ease-in forwards;
+}
+
+nav ul li:nth-child(1) {
+  animation-delay: 0.6s;
+}
+nav ul li:nth-child(2) {
+  animation-delay: 0.7s;
+}
+nav ul li:nth-child(3) {
+  animation-delay: 0.8s;
+}
+nav ul li:nth-child(4) {
+  animation-delay: 0.9s;
+}
+nav ul li:nth-child(5) {
+  animation-delay: 1s;
+}
+
+@keyframes fadeDown {
+  from {
+    transform: translateY(-1.5rem);
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+nav ul a {
+  text-decoration: none;
+  color: red;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  /* display: inline-block; */
+  padding: 0 clamp(0.5rem, 1.5vw, 1rem);
+  transition: all 0.5s ease-in;
+}
+
+nav ul a:hover {
+  color: var(--black);
+  background-color: rgba(255, 0, 0, 0.06);
+  transform: scale(1.05);
+}
