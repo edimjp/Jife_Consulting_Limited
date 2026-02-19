@@ -1,9 +1,19 @@
 nav {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+
+/* nav > div {
+  display: flex;
+  align-items: center;
+} */
+
+nav div.nav-container {
   background-color: var(--white);
   box-shadow:
     0 2px 4px rgba(0, 0, 0, 0.15),
     0 8px 16px rgba(0, 0, 0, 0.1);
-  z-index: 20;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -25,7 +35,7 @@ nav {
   }
 }
 
-nav div {
+nav div.nav-container > div {
   width: 80vw;
   display: flex;
   align-items: center;
@@ -47,7 +57,7 @@ nav img.JCL_Logo:hover {
   transform: scale(0.97);
 }
 
-nav ul {
+nav div.nav-container ul {
   list-style: none;
   display: flex;
   margin-left: auto;
@@ -56,26 +66,26 @@ nav ul {
   /* gap: clamp(1rem, 3.5vw, 8rem); */
 }
 
-nav ul li {
+nav div.nav-container ul li {
   display: flex;
   height: 100%;
   opacity: 0;
   animation: fadeDown 0.4s ease-in forwards;
 }
 
-nav ul li:nth-child(1) {
+nav div.nav-container ul li:nth-child(1) {
   animation-delay: 0.6s;
 }
-nav ul li:nth-child(2) {
+nav div.nav-container ul li:nth-child(2) {
   animation-delay: 0.7s;
 }
-nav ul li:nth-child(3) {
+nav div.nav-container ul li:nth-child(3) {
   animation-delay: 0.8s;
 }
-nav ul li:nth-child(4) {
+nav div.nav-container ul li:nth-child(4) {
   animation-delay: 0.9s;
 }
-nav ul li:nth-child(5) {
+nav div.nav-container ul li:nth-child(5) {
   animation-delay: 1s;
 }
 
@@ -90,7 +100,7 @@ nav ul li:nth-child(5) {
   }
 }
 
-nav ul a {
+nav div.nav-container ul a {
   text-decoration: none;
   color: red;
   font-size: 1.1rem;
@@ -102,8 +112,103 @@ nav ul a {
   transition: all 0.5s ease-in;
 }
 
-nav ul a:hover {
+nav div.nav-container ul a:hover {
   color: var(--black);
   background-color: rgba(255, 0, 0, 0.06);
   transform: scale(1.05);
+}
+
+nav img.hamburger {
+  display: none;
+  height: 2.5rem;
+  width: auto;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: absolute;
+  right: 1rem;
+  /* top: 30%; */
+}
+
+nav img.cancel {
+  height: 1.5rem;
+  width: auto;
+  position: absolute;
+  right: 1.5rem;
+  /* top: 40%; */
+  cursor: pointer;
+  display: none;
+}
+
+nav img.hamburger:hover,
+nav img.cancel:hover {
+  transform: scale(1.05);
+}
+
+nav div.second-nav-links {
+  position: absolute;
+  /* top: 4.5rem; right below the navbar */
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: height 0.4s ease;
+  z-index: 15;
+}
+
+nav div.second-nav-links.active {
+  height: 30vh;
+}
+
+nav div.second-nav-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+nav div.second-nav-links ul a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--red);
+  font-size: 1.3rem;
+  font-weight: 700;
+  transition: all 0.5s ease;
+  transform-origin: left center;
+  /* transform: scale(1); */
+}
+
+nav div.second-nav-links ul a:hover {
+  color: var(--black);
+  /* background-color: rgba(255, 0, 0, 0.06); */
+  transform: scale(1.05);
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 900px) {
+  nav div.nav-container ul {
+    display: none;
+  }
+
+  nav a.JCLL_Link {
+    margin-left: 0;
+  }
+
+  nav img.hamburger {
+    display: inline-block;
+  }
+  nav img.cancel {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 901px) {
+  nav div.second-nav-links {
+    display: none;
+  }
 }

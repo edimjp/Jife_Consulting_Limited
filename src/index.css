@@ -52,6 +52,7 @@ main img.indexFI {
   position: absolute;
   animation: heroImgScale 24s ease-in-out infinite;
   animation-fill-mode: both;
+  will-change: transform, opacity;
 }
 
 main img.indexFI.one {
@@ -78,12 +79,12 @@ main img.indexFI.three {
 
   25% {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   30% {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   40% {
@@ -92,7 +93,7 @@ main img.indexFI.three {
 
   100% {
     opacity: 0;
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
 
@@ -103,6 +104,7 @@ main div.hero_Text {
   left: 7%;
   color: var(--lightblack);
   text-align: justify;
+  padding-right: 1rem;
 }
 
 main div.hero_Text h1 {
@@ -132,13 +134,14 @@ main div.hero_Text p {
 }
 
 section.who_we_are {
-  height: 22rem;
+  /* height: 22rem; */
   background-color: rgb(42, 44, 44);
   color: var(--white);
   display: flex;
   align-items: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  padding: 2rem;
 }
 
 section.who_we_are div {
@@ -180,7 +183,7 @@ section.who_we_are a button {
 section.who_we_are a button:hover {
   background-color: var(--red);
   color: var(--white);
-  border: 2px solid var(--black);
+  /* border: 2px solid var(--black); */
 }
 
 section.who_we_are a button::before {
@@ -189,7 +192,7 @@ section.who_we_are a button::before {
   top: 0;
   right: 50%;
   transform: translateX(50%);
-  width: 1%;
+  width: 0;
   height: 100%;
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -205,11 +208,11 @@ section.who_we_are a button:hover::before {
 
 section.core_service {
   background-color: var(--black);
-  height: 678px;
-  display: flex;
+  min-height: 678px;
+  display: grid;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
+  padding: 4rem 2rem;
   margin-top: 3rem;
 }
 
@@ -220,17 +223,15 @@ section.core_service h2 {
 }
 
 section div.cs_card {
-  display: flex;
-  /* flex: 1 1 1 1; */
-  gap: 2rem;
   color: var(--lightGray);
-  /* justify-content: center;
-  align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
 }
 
 section div.cs_card div {
   text-align: center;
-  flex: 1;
+  /* flex: 1; */
 }
 
 section div.cs_card div:hover h3 {
@@ -398,14 +399,80 @@ section.why_jife a button:hover::before {
 }
 
 main .CU_Section {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* justify-content: center; */
   /* align-items: center; */
   gap: clamp(2rem, 10vw, 3rem);
   padding: clamp(3rem, 15vw, 6rem);
 }
 
-main .CU_Section > div,
+/* main .CU_Section > div,
 main .CU_Section .CForm {
   flex: 1;
+} */
+
+@media (max-width: 900px) {
+  section.who_we_are div {
+    padding-left: clamp(1rem, 5vw, 3rem);
+  }
+
+  section div.cs_card div:hover h3 {
+    filter: brightness(120%);
+    margin-top: 1rem;
+  }
+
+  section div.cs_card div:hover p {
+    opacity: 1;
+    transform: translateY(0);
+    filter: brightness(120%);
+  }
+
+  section div.cs_card div:hover button {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  section div.cs_card div h3 {
+    /* text-align: center;
+  font-size: 1.5rem; */
+    /* margin-bottom: 5rem; */
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    filter: brightness(120%);
+    /* transition: all 0.5s ease-in-out; */
+  }
+
+  section div.cs_card div p {
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    /* font-family: roboto-medium, sans-serif; */
+    line-height: 2rem;
+    transform: translateY(0);
+    opacity: 1;
+    /* transition: all 0.8s ease-in-out 0.3s; */
+    /* color: var(--black); */
+  }
+
+  section div.cs_card div button {
+    margin-top: 2rem;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  section.why_jife > div {
+    /* display: flex; */
+    /* gap: clamp(1rem, 8vw, 6rem); */
+    /* justify-content: center; */
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  main .CU_Section {
+    grid-template-columns: 1fr;
+  }
 }
