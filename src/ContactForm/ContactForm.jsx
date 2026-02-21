@@ -19,7 +19,7 @@ function ContactForm({ className }) {
               required
               placeholder=" "
             />
-            <label htmlFor="firstName">First Name*</label>
+            <label htmlFor="firstName">First Name *</label>
           </div>
 
           <div className="form-group">
@@ -30,7 +30,7 @@ function ContactForm({ className }) {
               required
               placeholder=" "
             />
-            <label htmlFor="lastName">Last Name*</label>
+            <label htmlFor="lastName">Last Name *</label>
           </div>
         </div>
 
@@ -43,7 +43,7 @@ function ContactForm({ className }) {
               required
               placeholder=" "
             />
-            <label htmlFor="email">email*</label>
+            <label htmlFor="email">email *</label>
           </div>
 
           <div className="form-group">
@@ -64,7 +64,7 @@ function ContactForm({ className }) {
             required
             placeholder=" "
           ></textarea>
-          <label htmlFor="message">Message*</label>
+          <label htmlFor="message">Message *</label>
         </div>
 
         <button type="submit">Send Message</button>

@@ -146,6 +146,8 @@ section.who_we_are {
 
 section.who_we_are div {
   padding-left: clamp(4rem, 30vw, 15rem);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 section.who_we_are h2 {
@@ -398,23 +400,15 @@ section.why_jife a button:hover::before {
   width: 100%;
 }
 
-main .CU_Section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* justify-content: center; */
-  /* align-items: center; */
-  gap: clamp(2rem, 10vw, 3rem);
-  padding: clamp(3rem, 15vw, 6rem);
-}
-
-/* main .CU_Section > div,
-main .CU_Section .CForm {
-  flex: 1;
-} */
-
 @media (max-width: 900px) {
   section.who_we_are div {
-    padding-left: clamp(1rem, 5vw, 3rem);
+    padding-left: clamp(0.3rem, 3vw, 0.7rem);
+    /* padding-top: 3rem;
+    padding-bottom: 3rem; */
+  }
+
+  section.who_we_are p {
+    max-width: 100%;
   }
 
   section div.cs_card div:hover h3 {

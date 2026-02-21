@@ -6,7 +6,7 @@ import ContactForm from "../ContactForm/ContactForm.jsx";
 function ContactUs({ className }) {
   return (
     <>
-      <section className={`contact_us ${className}`}>
+      <section className={"contact_us"}>
         <div>
           <div className="cu_header">
             <h2>Get the guidance you need, talk to an advisor</h2>

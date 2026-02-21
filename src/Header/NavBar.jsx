@@ -7,6 +7,7 @@ import "./navBar.css";
 import hamburger from "../assets/hamburger-menu.svg";
 import cancel from "../assets/cancel.svg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [menubar, setMenubar] = useState(false);
@@ -26,19 +27,24 @@ function NavBar() {
 
             <ul>
               <li>
-                <a href="">Home</a>
+                <Link to="/">Home</Link>
+                {/* <a href="">Home</a> */}
               </li>
               <li>
-                <a href="">About</a>
+                {/* <a href="">About</a> */}
+                <Link to="/About">About</Link>
               </li>
               <li>
-                <a href="">Services</a>
+                {/* <a href="">Services</a> */}
+                <Link to="/Services">Services</Link>
               </li>
               <li>
-                <a href="">Contact</a>
+                {/* <a href="">Contact</a> */}
+                <Link to="/Contact">Contact</Link>
               </li>
               <li>
-                <a href="">Our Team</a>
+                {/* <a href="">Our Team</a> */}
+                <Link to="/OurTeam">Our Team</Link>
               </li>
             </ul>
             {!menubar && (
@@ -64,19 +70,19 @@ function NavBar() {
         <div className={`second-nav-links ${menubar ? "active" : ""}`}>
           <ul>
             <li>
-              <a href="">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="">About</a>
+              <Link to="/About">About</Link>
             </li>
             <li>
-              <a href="">Services</a>
+              <Link to="/Services">Services</Link>
             </li>
             <li>
-              <a href="">Contact</a>
+              <Link to="/Contact">Contact</Link>
             </li>
             <li>
-              <a href="">Our Team</a>
+              <Link to="/OurTeam">Our Team</Link>
             </li>
           </ul>
         </div>

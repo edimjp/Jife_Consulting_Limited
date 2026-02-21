@@ -88,3 +88,14 @@ form button:hover::after {
   width: 100%;
   color: var(--red);
 }
+
+@media (max-width: 768px) {
+  div.form-group label {
+    font-size: 0.75rem;
+  }
+
+  div.form-group input,
+  div.form-group textarea {
+    font-size: 0.65rem;
+  }
+}

@@ -1,15 +1,16 @@
-import NavBar from "./Header/NavBar.jsx";
+// import NavBar from "./Header/NavBar.jsx";
 import indexFimage from "./assets/JCL_Image3.jpg";
 import indexFimage2 from "./assets/JCL_Image2.jpg";
 import indexFimage3 from "./assets/JCL_Image1.jpg";
 import whyJifeImage from "./assets/WJCL_Image2.jpg";
 import Footer from "./Footer/Footer.jsx";
 import ContactUs from "./ContactUs/ContactUs.jsx";
+import "./index.css";
 
 function Index() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <main>
         <div className="ImageFI">
           <img src={indexFimage} alt="IndexFImage1" className="indexFI one" />
@@ -164,7 +165,6 @@ function Index() {
 
         <ContactUs className="CU_Section" />
       </main>
-      <Footer />
     </>
   );
 }
