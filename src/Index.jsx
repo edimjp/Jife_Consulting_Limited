@@ -34,8 +34,8 @@ function Index() {
 
         <section className="who_we_are">
           <div>
-            <h2>Who we are</h2>
-            <p>
+            <h2 className="reveal">Who we are</h2>
+            <p className="reveal">
               Jife Consulting Limited is a dynamic and innovative training and
               consultancy firm specializing in delivering high-quality solutions
               to businesses and organizations. With a team of highly skilled
@@ -44,7 +44,7 @@ function Index() {
               organizations to thrive in their industries.
             </p>
 
-            <Link to="/Services">
+            <Link to="/Services" className="reveal">
               <button>View More</button>
             </Link>
           </div>
@@ -55,9 +55,9 @@ function Index() {
             <h2>Core Services:</h2>
 
             <div className="cs_card">
-              <div>
-                <h3>Training & Development</h3>
-                <p>
+              <div className="reveal">
+                <h3 className="reveal">Training & Development</h3>
+                <p className="reveal">
                   We offer a broad spectrum of specialized training programs in
                   areas such as project management, leadership development,
                   strategic planning, business managemnet, youth empowerment,
@@ -68,14 +68,18 @@ function Index() {
                 transfer and retention. */}
                 </p>
 
-                <HashLink smooth to="/Services#training-development">
+                <HashLink
+                  smooth
+                  to="/Services#training-development"
+                  className="reveal"
+                >
                   <button>Learn More!</button>
                 </HashLink>
               </div>
 
-              <div>
-                <h3>Consultancy Services</h3>
-                <p>
+              <div className="reveal">
+                <h3 className="reveal">Consultancy Services</h3>
+                <p className="reveal">
                   Jife Consulting delivers organizational development,
                   operational improvement, process optimization, and change
                   management services. We partner with clients to assess current
@@ -86,12 +90,18 @@ function Index() {
                 management, all of which are critical for growth. */}
                 </p>
 
-                <button>Learn More!</button>
+                <HashLink
+                  smooth
+                  to="/Services#consultancy-services"
+                  className="reveal"
+                >
+                  <button>Learn More!</button>
+                </HashLink>
               </div>
 
-              <div>
-                <h3>Capacity Building</h3>
-                <p>
+              <div className="reveal">
+                <h3 className="reveal">Capacity Building</h3>
+                <p className="reveal">
                   We support organizations in building the skills and
                   competencies necessary for sustainable growth and operational
                   excellence. Through structured learning and development
@@ -101,12 +111,18 @@ function Index() {
                 adopt best practices in the ever-evolving business environment. */}
                 </p>
 
-                <button>Learn More!</button>
+                <HashLink
+                  smooth
+                  to="/Services#capacity-building"
+                  className="reveal"
+                >
+                  <button>Learn More!</button>
+                </HashLink>
               </div>
 
-              <div>
-                <h3>Project Management</h3>
-                <p>
+              <div className="reveal">
+                <h3 className="reveal">Project Management</h3>
+                <p className="reveal">
                   Our project management services ensure that your projects are
                   executed successfully, on time, and within budget. Our
                   experienced project managers provide comprehensive support
@@ -115,7 +131,13 @@ function Index() {
                 optimal resource allocation and project delivery. */}
                 </p>
 
-                <button>Learn More!</button>
+                <HashLink
+                  smooth
+                  to="/Services#project-management"
+                  className="reveal"
+                >
+                  <button>Learn More!</button>
+                </HashLink>
               </div>
             </div>
           </div>
@@ -123,10 +145,14 @@ function Index() {
 
         <section className="why_jife">
           <div>
-            <img src={whyJifeImage} alt="Why Jife Consulting Limited" />
+            <img
+              src={whyJifeImage}
+              alt="Why Jife Consulting Limited"
+              className="reveal"
+            />
             <div>
-              <h2>Why Jife Consulting Limited</h2>
-              <p>
+              <h2 className="reveal">Why Jife Consulting Limited</h2>
+              <p className="reveal">
                 <strong>Expertise and Experience:</strong> Our team comprises
                 industry experts with years of experience in consulting and
                 training across sectors.
@@ -145,17 +171,17 @@ function Index() {
                 streamline operations, and create a more competent workforce.
               </p>
 
-              <a href="">
+              <Link to="./Services" className="reveal">
                 <button>View Services</button>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
 
         <section className="who_we_are">
           <div>
-            <h2>Diverse Experience</h2>
-            <p>
+            <h2 className="reveal">Diverse Experience</h2>
+            <p className="reveal">
               Jife Consulting has a proven track record of working with various
               companies in different sectors, providing them with bespoke
               training programs and consultancy services to enhance their

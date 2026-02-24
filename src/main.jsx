@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 // import NavBar from "./NavBar.jsx";
 // import Index from "./Index.jsx";
 import App from "./App.jsx";
+import "./App.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

@@ -98,4 +98,8 @@ form button:hover::after {
   div.form-group textarea {
     font-size: 0.65rem;
   }
+
+  div.form-group label.pn-opt {
+    font-size: 0.5rem;
+  }
 }

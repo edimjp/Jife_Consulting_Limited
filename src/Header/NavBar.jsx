@@ -21,9 +21,9 @@ function NavBar() {
       <nav>
         <div className="nav-container">
           <div>
-            <a href="" className="JCLL_Link">
+            <Link to={"/"} className="JCLL_Link">
               <img src={JCLLogo} alt="JCL_Logo" className="JCL_Logo" />
-            </a>
+            </Link>
 
             <ul>
               <li>

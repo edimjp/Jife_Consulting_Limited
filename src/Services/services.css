@@ -16,18 +16,16 @@ section div.osp_div div {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+  align-items: flex-start;
 }
 
 section div.osp_div h2 {
-  font-size: 2rem;
   color: var(--white);
   /* margin-bottom: 1.5rem; */
 }
 
 section div.osp_div p {
   color: #929596;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
   font-weight: 600;
   text-align: justify;
   max-width: 80%;
@@ -35,6 +33,7 @@ section div.osp_div p {
 
 section div.osp_div a {
   text-decoration: none;
+  margin: 1.5rem 0;
 }
 
 section div.osp_div a button {
@@ -44,7 +43,6 @@ section div.osp_div a button {
   color: var(--white);
   border: 2px solid var(--red);
   border-radius: 4px;
-  font-size: 0.875rem;
   font-weight: 600;
   cursor: pointer;
   position: relative;
@@ -114,7 +112,6 @@ section div.core_services > div:hover {
 
 section div.core_services h3 {
   color: var(--white);
-  font-size: 1.5rem;
   margin-bottom: 0.3rem;
 }
 
@@ -126,8 +123,7 @@ section div.core_services h4 {
 
 section div.core_services p {
   color: #929596;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
+
   font-weight: 600;
   text-align: justify;
 }
@@ -141,7 +137,6 @@ section.our_client {
 }
 
 section.our_client h2 {
-  font-size: 2rem;
   margin-bottom: 5rem;
   color: var(--black);
   text-align: center;
@@ -170,7 +165,6 @@ div.client_logos > div {
 }
 
 div.client_logos p {
-  font-size: 0.875rem;
   font-weight: 600;
   color: #0a0a0a;
   max-width: 25rem;
@@ -178,4 +172,46 @@ div.client_logos p {
   padding: 0 0.2rem;
   border-left: #0a0a0a solid 2px;
   border-right: #0a0a0a solid 2px;
+}
+
+@media (max-width: 900px) {
+  section.our_services > div.osp_div {
+    grid-template-columns: repeat(1, 1fr);
+    /* gap: 2rem; */
+  }
+
+  section div.osp_div p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  section div.core_services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    transform: translateY(7%);
+    /* z-index: 3; */
+    /* margin-top: 3rem; */
+  }
+
+  section.our_services {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 7rem 1rem;
+    background-color: #0a0a0a;
+  }
+}
+
+@media (max-width: 729px) {
+  section div.core_services {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    transform: translateY(0);
+    margin-top: 3rem;
+  }
+
+  section.our_services img {
+    min-height: 20rem;
+  }
 }

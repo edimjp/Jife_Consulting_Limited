@@ -9,16 +9,11 @@ section.about_hero div {
   transform: translate(3%, 40%);
 }
 
-section.about_hero h1 {
-  font-size: clamp(0.5rem, 5vw, 1.6rem);
-}
-
 section.about_hero p {
   max-width: 30rem;
-  font-size: clamp(0.5rem, 3vw, 0.9rem);
   font-weight: 600;
-  line-height: 1.5rem;
   text-align: justify;
+  padding-right: 1rem;
   /* padding-left: 0.5rem; */
 }
 
@@ -64,8 +59,6 @@ section.C_Overview h3 {
 
 section.C_Overview p {
   color: #929596;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
   font-weight: 600;
   text-align: justify;
 }
@@ -85,7 +78,6 @@ section div.CO_Text a button {
   color: var(--white);
   border: 2px solid var(--red);
   border-radius: 4px;
-  font-size: 0.875rem;
   font-weight: 600;
   cursor: pointer;
   position: relative;
@@ -116,4 +108,21 @@ section.div.CO_Text a button::before {
 section div.CO_Text a button:hover::before {
   opacity: 1;
   width: 100%;
+}
+
+@media (max-width: 900px) {
+  section.C_Overview > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  section.C_Overview {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  section div.CO_Text a button {
+    margin-top: 0;
+  }
 }

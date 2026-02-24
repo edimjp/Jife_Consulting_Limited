@@ -13,9 +13,9 @@ section.contact_us {
   padding: clamp(3rem, 15vw, 6rem);
 }
 
-section.contact_us h2 {
+/* section.contact_us h2 {
   font-size: 1.5rem;
-}
+} */
 
 div.emailLogo {
   display: flex;
@@ -29,7 +29,6 @@ div.cu_header {
 }
 
 div.cu_header p {
-  font-size: 1rem;
   color: rgb(146, 149, 150);
   font-weight: 600;
 }

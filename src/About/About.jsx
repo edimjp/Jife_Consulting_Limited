@@ -9,8 +9,8 @@ function About() {
       <main>
         <section className="about_hero">
           <div>
-            <h1>Driving Growth Through Expertise</h1>
-            <p>
+            <h1 className="reveal">Driving Growth Through Expertise</h1>
+            <p className="reveal">
               Strong organizations are built on knowledge, strategy, and the
               right expertise. Businesses thrive when their people are equipped
               with practical skills, innovative thinking, and tailored solutions
@@ -24,11 +24,15 @@ function About() {
 
         <section className="C_Overview">
           <div>
-            <img src={image1} alt="Jife Consulting Limited Overview" />
+            <img
+              src={image1}
+              alt="Jife Consulting Limited Overview"
+              className="reveal"
+            />
             <div className="CO_Text">
               <div>
-                <h2>Company Overview</h2>
-                <p className="CO_p1">
+                <h2 className="reveal">Company Overview</h2>
+                <p className="CO_p1 reveal">
                   Jife Consulting Limited is a dynamic and innovative training
                   and consultancy firm specializing in delivering high-quality
                   solutions to businesses and organizations. With a team of
@@ -42,14 +46,14 @@ function About() {
                   financial institutions, energy, infrastructure, government
                   agencies, maritime and economic empowerment.
                 </p>
-                <h3>Company Registration</h3>
+                <h3 className="reveal">Company Registration</h3>
                 <p>
                   Jife Consulting was incorporated on 19 October 2010.
                   Registration no: RC917133.
                 </p>
               </div>
 
-              <Link to="/services">
+              <Link to="/Services" className="reveal">
                 <button>View Services</button>
               </Link>
             </div>

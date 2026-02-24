@@ -11,7 +11,7 @@ function ContactForm({ className }) {
     <>
       <form className={`contact-form ${className}`} onSubmit={handleSubmit}>
         <div className="sbs-input">
-          <div className="form-group">
+          <div className="form-group reveal">
             <input
               type="text"
               name="first_Name"
@@ -22,7 +22,7 @@ function ContactForm({ className }) {
             <label htmlFor="firstName">First Name *</label>
           </div>
 
-          <div className="form-group">
+          <div className="form-group reveal">
             <input
               type="text"
               name="last_Name"
@@ -35,7 +35,7 @@ function ContactForm({ className }) {
         </div>
 
         <div className="sbs-input">
-          <div className="form-group">
+          <div className="form-group reveal">
             <input
               type="email"
               name="email"
@@ -46,18 +46,20 @@ function ContactForm({ className }) {
             <label htmlFor="email">email *</label>
           </div>
 
-          <div className="form-group">
+          <div className="form-group reveal">
             <input type="tel" name="phone" id="phone" placeholder=" " />
-            <label htmlFor="phone">Phone Number (Optional)</label>
+            <label className="pn-opt" htmlFor="phone">
+              Phone Number (Optional)
+            </label>
           </div>
         </div>
 
-        <div className="form-group">
+        <div className="form-group reveal">
           <input type="text" name="company" id="company" placeholder=" " />
           <label htmlFor="company">Company (Optional)</label>
         </div>
 
-        <div className="form-group">
+        <div className="form-group reveal">
           <textarea
             name="message"
             id="message"
@@ -67,7 +69,9 @@ function ContactForm({ className }) {
           <label htmlFor="message">Message *</label>
         </div>
 
-        <button type="submit">Send Message</button>
+        <button type="submit" className="reveal">
+          Send Message
+        </button>
       </form>
     </>
   );

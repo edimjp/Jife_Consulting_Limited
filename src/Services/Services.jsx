@@ -22,7 +22,7 @@ function Services() {
                 practices, and hands-on tools, we empower businesses and teams
                 to achieve measurable results and sustainable growth.
               </p>
-              <Link to="/contact">
+              <Link to="/Contact">
                 <button>Click here for enquiries</button>
               </Link>
             </div>
@@ -47,7 +47,7 @@ function Services() {
             </div>
 
             <div>
-              <div>
+              <div id="consultancy-services">
                 <h3>Consultancy Services</h3>
                 <h4>Turning Challenges Into Opportunities</h4>
               </div>
@@ -64,7 +64,7 @@ function Services() {
             </div>
 
             <div>
-              <div>
+              <div id="capacity-building">
                 <h3>Capacity Building</h3>
                 <h4>Unlocking Potential Across Your Organization</h4>
               </div>
@@ -79,7 +79,7 @@ function Services() {
             </div>
 
             <div>
-              <div>
+              <div id="project-management">
                 <h3>Project Management</h3>
                 <h4>From Planning to Delivery, We Deliver Excellence</h4>
               </div>
