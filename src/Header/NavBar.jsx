@@ -44,7 +44,7 @@ function NavBar() {
               </li>
               <li>
                 {/* <a href="">Our Team</a> */}
-                <Link to="/OurTeam">Our Team</Link>
+                <Link to="/Team">Our Team</Link>
               </li>
             </ul>
             {!menubar && (
@@ -82,7 +82,7 @@ function NavBar() {
               <Link to="/Contact">Contact</Link>
             </li>
             <li>
-              <Link to="/OurTeam">Our Team</Link>
+              <Link to="/Team">Our Team</Link>
             </li>
           </ul>
         </div>

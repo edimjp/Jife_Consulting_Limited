@@ -120,7 +120,7 @@ nav div.nav-container ul a:hover {
 
 nav img.hamburger {
   display: none;
-  height: 2.5rem;
+  height: 2rem;
   width: auto;
   cursor: pointer;
   transition: all 0.5s ease;
@@ -193,6 +193,11 @@ nav div.second-nav-links ul a:hover {
 @media (max-width: 900px) {
   nav div.nav-container ul {
     display: none;
+  }
+  nav img.JCL_Logo {
+    height: auto;
+    width: 7rem;
+    transition: all 0.5s ease;
   }
 
   nav a.JCLL_Link {

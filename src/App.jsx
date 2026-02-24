@@ -10,6 +10,7 @@ import About from "./About/About.jsx";
 import Footer from "./Footer/Footer.jsx";
 import Services from "./Services/Services.jsx";
 import ContactUs from "./ContactUs/ContactUs.jsx";
+import Team from "./Team/Team.jsx";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/Contact" element={<ContactUs />} />
+          <Route path="/Team" element={<Team />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -3,9 +3,10 @@ import indexFimage from "./assets/JCL_Image3.jpg";
 import indexFimage2 from "./assets/JCL_Image2.jpg";
 import indexFimage3 from "./assets/JCL_Image1.jpg";
 import whyJifeImage from "./assets/WJCL_Image2.jpg";
-import Footer from "./Footer/Footer.jsx";
 import ContactUs from "./ContactUs/ContactUs.jsx";
 import "./index.css";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Index() {
   return (
@@ -43,9 +44,9 @@ function Index() {
               organizations to thrive in their industries.
             </p>
 
-            <a href="">
+            <Link to="/Services">
               <button>View More</button>
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -67,7 +68,9 @@ function Index() {
                 transfer and retention. */}
                 </p>
 
-                <button>Learn More!</button>
+                <HashLink smooth to="/Services#training-development">
+                  <button>Learn More!</button>
+                </HashLink>
               </div>
 
               <div>
@@ -163,7 +166,7 @@ function Index() {
           </div>
         </section>
 
-        <ContactUs className="CU_Section" />
+        <ContactUs />
       </main>
     </>
   );

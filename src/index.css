@@ -102,7 +102,7 @@ main div.hero_Text {
   z-index: 2;
   top: 65vh;
   left: 7%;
-  color: var(--lightblack);
+  color: #0a0a0a;
   text-align: justify;
   padding-right: 1rem;
 }
@@ -401,6 +401,10 @@ section.why_jife a button:hover::before {
 }
 
 @media (max-width: 900px) {
+  section.who_we_are {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
   section.who_we_are div {
     padding-left: clamp(0.3rem, 3vw, 0.7rem);
     /* padding-top: 3rem;
@@ -428,13 +432,9 @@ section.why_jife a button:hover::before {
   }
 
   section div.cs_card div h3 {
-    /* text-align: center;
-  font-size: 1.5rem; */
-    /* margin-bottom: 5rem; */
     margin-top: 1rem;
     margin-bottom: 1.5rem;
     filter: brightness(120%);
-    /* transition: all 0.5s ease-in-out; */
   }
 
   section div.cs_card div p {
@@ -455,13 +455,14 @@ section.why_jife a button:hover::before {
     transform: translateY(0);
   }
 
+  section.why_jife {
+    padding: 4rem 1rem;
+  }
+
   section.why_jife > div {
-    /* display: flex; */
-    /* gap: clamp(1rem, 8vw, 6rem); */
-    /* justify-content: center; */
     align-items: flex-start;
     flex-direction: column;
-    padding: 0 1rem;
+    padding: 0;
   }
 }
 
