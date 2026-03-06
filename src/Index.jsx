@@ -8,7 +8,23 @@ import "./index.css";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
+import { useState, useEffect, use } from "react";
+
 function Index() {
+  const [smallScreen, setSmallScreen] = useState(window.innerWidth <= 729);
+
+  useEffect(() => {
+    function handleResize() {
+      setSmallScreen(window.innerWidth <= 729);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const reveal = smallScreen ? "reveal" : "";
+
   return (
     <>
       {/* <NavBar /> */}
@@ -55,9 +71,9 @@ function Index() {
             <h2>Core Services:</h2>
 
             <div className="cs_card">
-              <div className="reveal">
-                <h3 className="reveal">Training & Development</h3>
-                <p className="reveal">
+              <div className={reveal}>
+                <h3 className={reveal}>Training & Development</h3>
+                <p className={reveal}>
                   We offer a broad spectrum of specialized training programs in
                   areas such as project management, leadership development,
                   strategic planning, business managemnet, youth empowerment,
@@ -71,15 +87,15 @@ function Index() {
                 <HashLink
                   smooth
                   to="/Services#training-development"
-                  className="reveal"
+                  className={reveal}
                 >
                   <button>Learn More!</button>
                 </HashLink>
               </div>
 
-              <div className="reveal">
-                <h3 className="reveal">Consultancy Services</h3>
-                <p className="reveal">
+              <div className={reveal}>
+                <h3 className={reveal}>Consultancy Services</h3>
+                <p className={reveal}>
                   Jife Consulting delivers organizational development,
                   operational improvement, process optimization, and change
                   management services. We partner with clients to assess current
@@ -93,15 +109,15 @@ function Index() {
                 <HashLink
                   smooth
                   to="/Services#consultancy-services"
-                  className="reveal"
+                  className={reveal}
                 >
                   <button>Learn More!</button>
                 </HashLink>
               </div>
 
-              <div className="reveal">
-                <h3 className="reveal">Capacity Building</h3>
-                <p className="reveal">
+              <div className={reveal}>
+                <h3 className={reveal}>Capacity Building</h3>
+                <p className={reveal}>
                   We support organizations in building the skills and
                   competencies necessary for sustainable growth and operational
                   excellence. Through structured learning and development
@@ -114,15 +130,15 @@ function Index() {
                 <HashLink
                   smooth
                   to="/Services#capacity-building"
-                  className="reveal"
+                  className={reveal}
                 >
                   <button>Learn More!</button>
                 </HashLink>
               </div>
 
-              <div className="reveal">
-                <h3 className="reveal">Project Management</h3>
-                <p className="reveal">
+              <div className={reveal}>
+                <h3 className={reveal}>Project Management</h3>
+                <p className={reveal}>
                   Our project management services ensure that your projects are
                   executed successfully, on time, and within budget. Our
                   experienced project managers provide comprehensive support
@@ -134,7 +150,7 @@ function Index() {
                 <HashLink
                   smooth
                   to="/Services#project-management"
-                  className="reveal"
+                  className={reveal}
                 >
                   <button>Learn More!</button>
                 </HashLink>

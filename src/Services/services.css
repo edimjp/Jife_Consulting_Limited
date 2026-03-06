@@ -113,6 +113,7 @@ section div.core_services > div:hover {
 section div.core_services h3 {
   color: var(--white);
   margin-bottom: 0.3rem;
+  /* font-size: 1.1rem; */
 }
 
 section div.core_services h4 {
@@ -123,7 +124,6 @@ section div.core_services h4 {
 
 section div.core_services p {
   color: #929596;
-
   font-weight: 600;
   text-align: justify;
 }
@@ -152,7 +152,7 @@ section div.client_logos {
 
 section div.client_logos img {
   /* width: 10rem; */
-  height: 7rem;
+  height: clamp(4rem, 20vw, 7rem);
   object-fit: contain;
 }
 
@@ -170,8 +170,6 @@ div.client_logos p {
   max-width: 25rem;
   text-align: center;
   padding: 0 0.2rem;
-  border-left: #0a0a0a solid 2px;
-  border-right: #0a0a0a solid 2px;
 }
 
 @media (max-width: 900px) {
@@ -213,5 +211,10 @@ div.client_logos p {
 
   section.our_services img {
     min-height: 20rem;
+  }
+}
+@media (min-width: 1200px) {
+  section div.core_services h3 {
+    font-size: 1.1rem;
   }
 }

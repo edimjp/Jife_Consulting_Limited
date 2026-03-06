@@ -10,7 +10,7 @@ section.contact_us {
   /* justify-content: center; */
   /* align-items: center; */
   gap: clamp(2rem, 10vw, 3rem);
-  padding: clamp(3rem, 15vw, 6rem);
+  padding: clamp(1rem, 5vw, 6rem);
 }
 
 /* section.contact_us h2 {

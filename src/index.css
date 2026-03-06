@@ -108,7 +108,7 @@ main div.hero_Text {
 }
 
 main div.hero_Text h1 {
-  font-size: clamp(0.5rem, 5vw, 1.6rem);
+  /* font-size: clamp(0.5rem, 5vw, 1.6rem); */
   margin-bottom: 0.5rem;
   font-weight: 900;
   opacity: 0;
@@ -116,7 +116,7 @@ main div.hero_Text h1 {
 }
 
 main div.hero_Text p {
-  font-size: clamp(0.5rem, 3vw, 0.9rem);
+  /* font-size: clamp(0.5rem, 3vw, 0.9rem); */
   font-weight: 700;
   max-width: 40rem;
   opacity: 0;
@@ -215,7 +215,7 @@ section.core_service {
 }
 
 section.core_service h2 {
-  font-size: clamp(0.5rem, 5vw, 1.2rem);
+  /* font-size: clamp(0.5rem, 5vw, 1.2rem); */
   /* margin-bottom: 4rem; */
   color: var(--white);
 }
