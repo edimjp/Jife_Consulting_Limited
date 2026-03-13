@@ -154,3 +154,9 @@ footer p.c-right {
     gap: 2rem;
   }
 }
+
+@media (min-width: 900px) {
+  html body footer h2 {
+  font-size: 1.5rem;
+}
+}

@@ -62,8 +62,8 @@ function Team() {
       <section>
         <div className="OurTeam">
           <div>
-            <h1>Meet Our Team</h1>
-            <p>Passionate professionals driving our success.</p>
+            <h1 className="reveal">Meet Our Team</h1>
+            <p className="reveal">Passionate professionals driving our success.</p>
           </div>
         </div>
         <div className="TeamParent">

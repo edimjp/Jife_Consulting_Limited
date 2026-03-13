@@ -14,12 +14,12 @@ function TeamCard({ image, name, title, bio }) {
     <>
       <div className="Team_IW">
         <div>
-          <img src={image} alt={name} />
-          <h2>{name}</h2>
-          <p className="title">{title}</p>
+          <img src={image} alt={name} className="reveal" />
+          <h2 className="reveal">{name}</h2>
+          <p className="title reveal">{title}</p>
         </div>
 
-        <p className="read">
+        <p className="read reveal">
           {readMore ? bio : preview + "..."}
           <span className="read" onClick={handleBio}>
             {readMore ? "read less" : "read more"}

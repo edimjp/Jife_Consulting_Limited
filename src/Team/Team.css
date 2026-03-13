@@ -7,12 +7,12 @@ section div.OurTeam {
   padding-left: 4rem;
 }
 
-div.OurTeam h1 {
+/* div.OurTeam h1 {
   font-size: 2rem;
-}
+} */
 
 div.OurTeam p {
-  font-size: 1rem;
+  /* font-size: 1rem; */
   font-weight: 500;
 }
 
@@ -38,22 +38,23 @@ div.Team_IW img {
   object-fit: cover;
 }
 
-div.Team_IW h2 {
+html body div.Team_IW h2 {
   color: var(--white);
   margin-top: 1.5rem;
+   font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
 div.Team_IW p.title {
   color: #707070;
   font-weight: 600;
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 
 div.Team_IW p.read {
   margin: 0.5rem;
   color: rgba(255, 255, 255, 0.623);
   text-align: center;
-  font-size: 0.875rem;
+  /* font-size: 0.875rem; */
 }
 
 div.Team_IW span {
@@ -61,3 +62,9 @@ div.Team_IW span {
   font-weight: 600;
   cursor: pointer;
 }
+
+/* @media (max-width: 1000px) {
+ html body div.Team_IW h2 {
+  font-size: clamp(1rem, 4vw, 2rem);
+}
+} */

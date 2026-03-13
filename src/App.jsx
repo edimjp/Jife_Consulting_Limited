@@ -18,6 +18,8 @@ function AppContent() {
   useEffect(() => {
     const reveals = document.querySelectorAll(".reveal");
 
+    reveals.forEach((el) => el.classList.remove("active"))
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
