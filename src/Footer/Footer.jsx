@@ -29,7 +29,7 @@ function Footer() {
                   <Link to={"/About"}>About</Link>
                 </li>
                 <li className="reveal">
-                  <Link to={"/Service"}>Services</Link>
+                  <Link to={"/Services"}>Services</Link>
                 </li>
                 <li className="reveal">
                   <Link to={"/Contact"}>Contact</Link>

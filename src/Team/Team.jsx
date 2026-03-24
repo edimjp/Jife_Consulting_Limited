@@ -1,9 +1,14 @@
 import Jife from "../assets/Jife_Williams_Image.jpeg";
+import Frances from "../assets/Frances_Oghene.jpg"
 import "./Team.css";
+import { useState } from "react";
 
 import TeamCard from "./TeamCard.jsx";
 
 function Team() {
+
+  const [openIndex, setOpenIndex] = useState(null)
+
   const teamMembers = [
     {
       image: Jife,
@@ -19,7 +24,7 @@ function Team() {
     },
 
     {
-      image: Jife,
+      image: Frances,
       name: "Frances Oghene (MS)",
       title: "Managing Director & Business Development",
       bio: `Frances Oghene has over 25 years of diverse experience in entrepreneurship, management, real estate and banking.
@@ -57,6 +62,10 @@ function Team() {
     },
   ];
 
+  function handleToggle(index){
+    setOpenIndex(prev => (prev === index ? null: index))
+  }
+
   return (
     <>
       <section>
@@ -67,13 +76,15 @@ function Team() {
           </div>
         </div>
         <div className="TeamParent">
-          {teamMembers.map((member) => (
+          {teamMembers.map((member, index) => (
             <TeamCard
               key={member.name}
               image={member.image}
               name={member.name}
               title={member.title}
               bio={member.bio}
+              readMore={openIndex === index}
+              onToggle={() => handleToggle(index)}
             />
           ))}
         </div>

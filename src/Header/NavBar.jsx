@@ -7,7 +7,7 @@ import "./navBar.css";
 import hamburger from "../assets/hamburger-menu.svg";
 import cancel from "../assets/cancel.svg";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
   const [menubar, setMenubar] = useState(false);
@@ -21,30 +21,30 @@ function NavBar() {
       <nav>
         <div className="nav-container">
           <div>
-            <Link to={"/"} className="JCLL_Link">
+            <NavLink to={"/"} className="JCLL_Link" >
               <img src={JCLLogo} alt="JCL_Logo" className="JCL_Logo" />
-            </Link>
+            </NavLink>
 
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <NavLink to="/" end style={({isActive}) => ({color: isActive? "black": ""})}>Home</NavLink>
                 {/* <a href="">Home</a> */}
               </li>
               <li>
                 {/* <a href="">About</a> */}
-                <Link to="/About">About</Link>
+                <NavLink to="/About" style={({isActive}) => ({color: isActive? "black": ""})}>About</NavLink>
               </li>
               <li>
                 {/* <a href="">Services</a> */}
-                <Link to="/Services">Services</Link>
+                <NavLink to="/Services" style={({isActive}) => ({color: isActive? "black": ""})}>Services</NavLink>
               </li>
               <li>
                 {/* <a href="">Contact</a> */}
-                <Link to="/Contact">Contact</Link>
+                <NavLink to="/Contact" style={({isActive}) => ({color: isActive? "black": ""})}>Contact</NavLink>
               </li>
               <li>
                 {/* <a href="">Our Team</a> */}
-                <Link to="/Team">Our Team</Link>
+                <NavLink to="/Team" style={({isActive}) => ({color: isActive? "black": ""})}>Our Team</NavLink>
               </li>
             </ul>
             {!menubar && (
@@ -70,19 +70,19 @@ function NavBar() {
         <div className={`second-nav-links ${menubar ? "active" : ""}`}>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink to="/" end style={({isActive}) => ({color: isActive? "black": ""})}>Home</NavLink>
             </li>
             <li>
-              <Link to="/About">About</Link>
+              <NavLink to="/About" style={({isActive}) => ({color: isActive? "black": ""})}>About</NavLink>
             </li>
             <li>
-              <Link to="/Services">Services</Link>
+              <NavLink to="/Services" style={({isActive}) => ({color: isActive? "black": ""})}>Services</NavLink>
             </li>
             <li>
-              <Link to="/Contact">Contact</Link>
+              <NavLink to="/Contact" style={({isActive}) => ({color: isActive? "black": ""})}>Contact</NavLink>
             </li>
             <li>
-              <Link to="/Team">Our Team</Link>
+              <NavLink to="/Team" style={({isActive}) => ({color: isActive? "black": ""})}>Our Team</NavLink>
             </li>
           </ul>
         </div>

@@ -1,14 +1,14 @@
 // import Jife from "../assets/Jife_Williams_Image.jpeg"
 
-import { useState } from "react";
+// import { useState } from "react";
 
-function TeamCard({ image, name, title, bio }) {
-  const [readMore, setReadMore] = useState(false);
-  const preview = bio.substring(0, 165);
+function TeamCard({ image, name, title, bio, readMore, onToggle }) {
+  // const [readMore, setReadMore] = useState(false);
+  const preview = bio.substring(0, 155);
 
-  function handleBio() {
-    setReadMore(!readMore);
-  }
+  // function handleBio() {
+  //   setReadMore(!readMore);
+  // }
 
   return (
     <>
@@ -21,7 +21,7 @@ function TeamCard({ image, name, title, bio }) {
 
         <p className="read reveal">
           {readMore ? bio : preview + "..."}
-          <span className="read" onClick={handleBio}>
+          <span className="read" onClick={onToggle}>
             {readMore ? "read less" : "read more"}
           </span>
         </p>
