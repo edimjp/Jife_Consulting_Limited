@@ -16,35 +16,65 @@ function NavBar() {
     setMenubar(!menubar);
   }
 
+  function closeMenu() {
+    setMenubar(false);
+  }
+
   return (
     <>
       <nav>
         <div className="nav-container">
           <div>
-            <NavLink to={"/"} className="JCLL_Link" >
+            <NavLink to={"/"} className="JCLL_Link">
               <img src={JCLLogo} alt="JCL_Logo" className="JCL_Logo" />
             </NavLink>
 
             <ul>
               <li>
-                <NavLink to="/" end style={({isActive}) => ({color: isActive? "black": ""})}>Home</NavLink>
+                <NavLink
+                  to="/"
+                  end
+                  style={({ isActive }) => ({ color: isActive ? "black" : "" })}
+                >
+                  Home
+                </NavLink>
                 {/* <a href="">Home</a> */}
               </li>
               <li>
                 {/* <a href="">About</a> */}
-                <NavLink to="/About" style={({isActive}) => ({color: isActive? "black": ""})}>About</NavLink>
+                <NavLink
+                  to="/About"
+                  style={({ isActive }) => ({ color: isActive ? "black" : "" })}
+                >
+                  About
+                </NavLink>
               </li>
               <li>
                 {/* <a href="">Services</a> */}
-                <NavLink to="/Services" style={({isActive}) => ({color: isActive? "black": ""})}>Services</NavLink>
+                <NavLink
+                  to="/Services"
+                  style={({ isActive }) => ({ color: isActive ? "black" : "" })}
+                >
+                  Services
+                </NavLink>
               </li>
               <li>
                 {/* <a href="">Contact</a> */}
-                <NavLink to="/Contact" style={({isActive}) => ({color: isActive? "black": ""})}>Contact</NavLink>
+                <NavLink
+                  to="/Contact"
+                  style={({ isActive }) => ({ color: isActive ? "black" : "" })}
+                >
+                  Contact
+                </NavLink>
               </li>
               <li>
                 {/* <a href="">Our Team</a> */}
-                <NavLink to="/Team" style={({isActive}) => ({color: isActive? "black": ""})}>Our Team</NavLink>
+                <NavLink
+                  to="/Team"
+                  style={({ isActive }) => ({ color: isActive ? "black" : "" })}
+                >
+                  Our Team
+                </NavLink>
               </li>
             </ul>
             {!menubar && (
@@ -67,22 +97,50 @@ function NavBar() {
           </div>
         </div>
 
+        {menubar && <div className="nav-backdrop" onClick={closeMenu}></div>}
+
         <div className={`second-nav-links ${menubar ? "active" : ""}`}>
-          <ul>
+          <ul onClick={closeMenu}>
             <li>
-              <NavLink to="/" end style={({isActive}) => ({color: isActive? "black": ""})}>Home</NavLink>
+              <NavLink
+                to="/"
+                end
+                style={({ isActive }) => ({ color: isActive ? "black" : "" })}
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/About" style={({isActive}) => ({color: isActive? "black": ""})}>About</NavLink>
+              <NavLink
+                to="/About"
+                style={({ isActive }) => ({ color: isActive ? "black" : "" })}
+              >
+                About
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/Services" style={({isActive}) => ({color: isActive? "black": ""})}>Services</NavLink>
+              <NavLink
+                to="/Services"
+                style={({ isActive }) => ({ color: isActive ? "black" : "" })}
+              >
+                Services
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/Contact" style={({isActive}) => ({color: isActive? "black": ""})}>Contact</NavLink>
+              <NavLink
+                to="/Contact"
+                style={({ isActive }) => ({ color: isActive ? "black" : "" })}
+              >
+                Contact
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/Team" style={({isActive}) => ({color: isActive? "black": ""})}>Our Team</NavLink>
+              <NavLink
+                to="/Team"
+                style={({ isActive }) => ({ color: isActive ? "black" : "" })}
+              >
+                Our Team
+              </NavLink>
             </li>
           </ul>
         </div>

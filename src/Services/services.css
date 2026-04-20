@@ -110,6 +110,13 @@ section div.core_services > div:hover {
   transform: scale(1.03);
 }
 
+#training-development,
+#consultancy-services,
+#capacity-building,
+#project-management {
+  scroll-margin-top: 7rem;
+}
+
 section div.core_services h3 {
   color: var(--white);
   margin-bottom: 0.3rem;

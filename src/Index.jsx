@@ -25,6 +25,9 @@ function Index() {
 
   const reveal = smallScreen ? "reveal" : "";
 
+  function hashElement(el) {
+    return el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
   return (
     <>
       {/* <NavBar /> */}
@@ -88,6 +91,7 @@ function Index() {
                   smooth
                   to="/Services#training-development"
                   className={reveal}
+                  scroll={hashElement}
                 >
                   <button>Learn More!</button>
                 </HashLink>
@@ -110,6 +114,7 @@ function Index() {
                   smooth
                   to="/Services#consultancy-services"
                   className={reveal}
+                  scroll={hashElement}
                 >
                   <button>Learn More!</button>
                 </HashLink>
@@ -131,6 +136,7 @@ function Index() {
                   smooth
                   to="/Services#capacity-building"
                   className={reveal}
+                  scroll={hashElement}
                 >
                   <button>Learn More!</button>
                 </HashLink>
@@ -151,6 +157,7 @@ function Index() {
                   smooth
                   to="/Services#project-management"
                   className={reveal}
+                  scroll={hashElement}
                 >
                   <button>Learn More!</button>
                 </HashLink>
