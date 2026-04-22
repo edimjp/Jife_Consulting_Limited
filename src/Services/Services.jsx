@@ -1,4 +1,4 @@
-import image3 from "../assets/JCL_Image3.jpg";
+import image3 from "../assets/JCL_Image3.webp";
 import jambLogo from "../assets/Official_JAMB_logo.png";
 import nimasaLogo from "../assets/NIMASA-LOGO.png";
 import nmuLogo from "../assets/NMU-Logo.png";
@@ -9,21 +9,17 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
 function Services() {
-
   // useEffect(()=>{
-    
+
   //     const elements = document.querySelectorAll(".osp_div h2, .osp_div p, .osp_div a, .osp_div img, .core_services h3, .core_services h4, .core_services p, .our_client h2, .our_client img, .our_client p")
-  
+
   //     console.log(elements)
-  
+
   //     for(const element of elements){
   //       element.classList.add("reveal")
   //     }
 
   // }, [])
-
-
-
 
   return (
     <>
@@ -50,7 +46,9 @@ function Services() {
             <div>
               <div id="training-development">
                 <h3 className="reveal">Training and Development</h3>
-                <h4 className="reveal">Transforming Knowledge Into Performance</h4>
+                <h4 className="reveal">
+                  Transforming Knowledge Into Performance
+                </h4>
               </div>
               <p className="reveal">
                 We offer a broad spectrum of specialized training programs in
@@ -66,7 +64,9 @@ function Services() {
             <div>
               <div id="consultancy-services">
                 <h3 className="reveal">Consultancy Services</h3>
-                <h4 className="reveal">Turning Challenges Into Opportunities</h4>
+                <h4 className="reveal">
+                  Turning Challenges Into Opportunities
+                </h4>
               </div>
               <p className="reveal">
                 Jife Consulting delivers organizational development, operational
@@ -83,7 +83,9 @@ function Services() {
             <div>
               <div id="capacity-building">
                 <h3 className="reveal">Capacity Building</h3>
-                <h4 className="reveal">Unlocking Potential Across Your Organization</h4>
+                <h4 className="reveal">
+                  Unlocking Potential Across Your Organization
+                </h4>
               </div>
               <p className="reveal">
                 We support organizations in building the skills and competencies
@@ -98,7 +100,9 @@ function Services() {
             <div>
               <div id="project-management">
                 <h3 className="reveal">Project Management</h3>
-                <h4 className="reveal">From Planning to Delivery, We Deliver Excellence</h4>
+                <h4 className="reveal">
+                  From Planning to Delivery, We Deliver Excellence
+                </h4>
               </div>
               <p className="revael">
                 Our project management services ensure that your projects are
@@ -118,8 +122,10 @@ function Services() {
 
             <div className="client_logos">
               <div>
-                <img src={nimasaLogo} alt="NIMASA Logo" className="reveal"/>
-                <p className="reveal">Nigerian Maritime Administration & Safety Agency</p>
+                <img src={nimasaLogo} alt="NIMASA Logo" className="reveal" />
+                <p className="reveal">
+                  Nigerian Maritime Administration & Safety Agency
+                </p>
               </div>
 
               <div>
@@ -128,15 +134,17 @@ function Services() {
               </div>
 
               <div>
-                <img src={nmuLogo} alt="NMU Logo"  className="reveal"/>
+                <img src={nmuLogo} alt="NMU Logo" className="reveal" />
                 <p className="reveal">
                   Nelson Metropolitan University, Port Elizabeth, South Africa
                 </p>
               </div>
 
               <div>
-                <img src={jambLogo} alt="JAMB Logo" className="reveal"/>
-                <p className="reveal">Joint Admissions and Matriculation Board</p>
+                <img src={jambLogo} alt="JAMB Logo" className="reveal" />
+                <p className="reveal">
+                  Joint Admissions and Matriculation Board
+                </p>
               </div>
 
               <div>

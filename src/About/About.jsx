@@ -1,5 +1,5 @@
 // import NavBar from "../Header/NavBar.jsx";
-import image1 from "../assets/JCL_Image1.jpg";
+import image1 from "../assets/JCL_Image1.webp";
 import "./about.css";
 import { Link } from "react-router-dom";
 

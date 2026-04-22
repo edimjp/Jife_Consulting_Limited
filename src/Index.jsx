@@ -1,8 +1,8 @@
 // import NavBar from "./Header/NavBar.jsx";
-import indexFimage from "./assets/JCL_Image3.jpg";
-import indexFimage2 from "./assets/JCL_Image2.jpg";
-import indexFimage3 from "./assets/JCL_Image1.jpg";
-import whyJifeImage from "./assets/WJCL_Image2.jpg";
+import indexFimage from "./assets/JCL_Image3.webp";
+import indexFimage2 from "./assets/JCL_Image2.webp";
+import indexFimage3 from "./assets/JCL_Image1.webp";
+import whyJifeImage from "./assets/WJCL_Image2.webp";
 import ContactUs from "./ContactUs/ContactUs.jsx";
 import "./index.css";
 import { Link } from "react-router-dom";
@@ -28,6 +28,7 @@ function Index() {
   function hashElement(el) {
     return el.scrollIntoView({ behavior: "smooth", block: "start" });
   }
+
   return (
     <>
       {/* <NavBar /> */}
